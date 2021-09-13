@@ -26,7 +26,7 @@ var global = js.Global()
 var document = global.Get("document")
 
 var (
-	scale   = float64(1)
+	scale   = float64(8)
 	cameraX = float64(iw / 2)
 	cameraY = float64(ih / 2)
 )

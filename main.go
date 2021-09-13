@@ -236,6 +236,8 @@ func coordXy(x int, y int) int {
 // 暂停
 var pause = false
 
+var playDom = document.Call("getElementById", "play")
+
 // 按键监听
 func onKey() {
 	document.Set("onkeyup", js.FuncOf(func(this js.Value, args []js.Value) interface{} {
@@ -249,6 +251,11 @@ func onKey() {
 		}
 		if currKey == 32 {
 			pause = !pause
+			if pause {
+				playDom.Set("innerHTML", "⏸")
+			} else {
+				playDom.Set("innerHTML", "▶️")
+			}
 		}
 
 		return nil
