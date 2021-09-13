@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+canvas {
+  /* border: 1px solid; */
+  /* background: black; */
+  /* cursor: none; */
+}
+/* #canvas {
+} */
+
+.input {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 10;
+  background-color: #000000c4;
+  color: white;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+.input span {
+  min-width: 60px;
+  display: inline-block;
+}
